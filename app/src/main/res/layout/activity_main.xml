@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="devoir.android.emsi.ma.devoir.MainActivity">
+
+    <Button
+        android:text="Charger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="120dp"
+        android:id="@+id/buttonCharger"
+        android:enabled="false"
+        android:onClick="Tach"/>
+
+    <TextView
+        android:text="Nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonCharger"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="42dp"
+        android:id="@+id/textViewNom" />
+
+    <TextView
+        android:text="Prénom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewNom"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/textViewPrenom" />
+
+    <TextView
+        android:text="Classe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewPrenom"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textViewClasse" />
+
+    <TextView
+        android:text="Note :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewClasse"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textViewNote" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewNote"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp"
+
+        android:id="@+id/textViewList"
+
+        android:gravity="left"
+        android:layout_gravity="left"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:id="@+id/nomValue"
+        android:layout_above="@+id/textViewPrenom"
+        android:layout_toEndOf="@+id/textViewPrenom" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/prenomValue"
+
+        android:gravity="left"
+        android:layout_gravity="left"
+        android:layout_alignBaseline="@+id/textViewPrenom"
+        android:layout_alignBottom="@+id/textViewPrenom"
+        android:layout_alignStart="@+id/nomValue" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/classeValue"
+
+        android:gravity="left"
+        android:layout_gravity="left"
+        android:layout_alignBaseline="@+id/textViewClasse"
+        android:layout_alignBottom="@+id/textViewClasse"
+        android:layout_alignStart="@+id/prenomValue" />
+</RelativeLayout>
